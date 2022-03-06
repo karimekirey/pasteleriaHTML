@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAZ TU PEDIDO</title>
+</head>
+
+<body>
+
+    <h1>HAZ TU PEDIDO </h1>
+    <br>
+    <P>Ingresa tus datos personales para ponernos en contacto contigo. </P>
+    <form action="pedido.js">
+        <br>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+        <br>
+
+        <br>
+        <label for="tel">Teléfono:</label>
+        <input type="text" name="tel" id="tel" placeholder="Teléfono">
+        <br>
+
+        <br>
+        <label for="Correo">Email:</label>
+        <input type="text" name="correo" id="correo" placeholder="ejemplo@correo.com">
+        <br>
+
+        <br>
+        <label for="Descripción">Descripción de tu pastel:</label>
+
+        <br>
+
+        <textarea id="descripción" name="descripción" rows="4" cols="50" placeholder="Descríbenos tu pastel ideal">
+
+</textarea>
+        <br>
+        <h2>Adorna tu pastel</h2>
+
+        <br>
+        <label for="niveles">Número de niveles de tu pastel:</label>
+        <input type="number" name="niv" id="niv" placeholder="Número de niveles">
+        <br>
+
+        <p>Elige un pan para cada nivel de tu pastel:</p>
+
+        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Chocopan</label><br>
+        <label><input type="checkbox" id="cbox2" value="second_checkbox"> Milky Way</label><br>
+        <label><input type="checkbox" id="cbox3" value="third_checkbox"> Fresa estrellada</label><br>
+        <label><input type="checkbox" id="cbox1" value="fourth_checkbox"> Vainilla espacial</label><br>
+
+        <br>
+        <p>Elige tu cobertura</p>
+        <select name="cobertura" id="cobertura">
+            <option value="glaseado">Glaseado brillante</option>
+            <option value="mate">Glaseado mate</option>
+            <option value="cobertura">Cobertura de chocolate</option>
+            <option value="fondant">Fondant</option>
+        </select>
+        <br>
+        <br>
+        <h2>Ahora los adornos</h2>
+        <p>Adornos:</p>
+
+        <label><input type="checkbox" id="cbox1" value="first_checkbox"> Estrellas</label><br>
+        <label><input type="checkbox" id="cbox2" value="second_checkbox"> Brillantina</label><br>
+        <label><input type="checkbox" id="cbox3" value="third_checkbox"> Planetas de fondant</label><br>
+        <label><input type="checkbox" id="cbox1" value="fourth_checkbox"> Foto impresa (¡La que tú gustes!)</label><br>
+        <br>
+        <label for="img">Selecciona tu foto:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <label for="otro">Otro:</label>
+        <input type="text" name="otro" id="otro" placeholder="Otra decoración">
+
+        <br>
+        <br>
+
+        <input type="reset">
+        <input type="submit">
+        <br>
+</body>
+
+</html>
